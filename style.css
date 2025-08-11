@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
+.navbar {
+    height: 80px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-family: cursive;
+}
+
+.br_logo img {
+    height: 85px;
+    width: 90px;
+    border-bottom-right-radius: 60px;
+}
+
+.section {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+    flex: 1; 
+    margin-left: 20px; 
+}
+
+.section li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.section li a:hover {
+    color: rgb(255, 0, 0);
+}
+.auto img{
+    height: 85px;
+    width: 90px;
+    border-bottom-left-radius: 50px;
+}
+.img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 3, 3, 0.549); /* makes background less visible */
+    z-index: 0;
+}
+
+
