@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart City Dashboard</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+        <section>
+  <div class="container">
+    <header>
+      <div class="navbar border">
+        <!-- Nav links -->
+         <img class="logo" src="logo.jpg">
+        <ul class="section" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#BiswaRide">Earn with BiswaRide</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html">Sign/Log in</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+        <!-- Hamburger menu -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <img class="logo1" src="cycle.jpg">
+      </div>
+    </header>
+  </div>
+  </section>
+
+  <!-- Header -->
+  <header>
+    <h1 class="heading">BiswaRide</h1>
+  </header>
+
+  <section>
+    <div class="box">
+      <div class="login-box">
+        <h2><i class="fa-solid fa-user"></i></h2>
+        <div class="login-container">
+        <div class="big">
+        <div class="user">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="username">
+        </div>
+        <div class="user">
+          <i class="fa-solid fa-lock"></i>
+          <input type="text" placeholder="password">
+        </div>
+        </div>
+        <button type="button">SUBMIT</button>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for Navbar -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>  
+
+
+
