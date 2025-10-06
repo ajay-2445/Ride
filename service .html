@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BiswaRide - Services</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar border">
+      <img class="logo" src="logo.jpg" alt="BiswaRide Logo">
+      <ul class="section" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html" class="active">Service</a></li>
+        <li><a href="#BiswaRide">Earn with BiswaRide</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html">Sign/Log in</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <img class="logo1" src="cycle.jpg" alt="Cycle Logo">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Our Services</h1>
+      <p>Ride options for every need — fast, affordable and reliable.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services container">
+    <h2>Choose Your Ride</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-car"></i>
+        <h3>BiswaRide Basic</h3>
+        <p>Affordable rides for your everyday travel within the city.</p>
+        <button class="btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-car-side"></i>
+        <h3>BiswaRide Premium</h3>
+        <p>Travel in style with premium cars and top-rated drivers.</p>
+        <button class="btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-motorcycle"></i>
+        <h3>BiswaRide Bike</h3>
+        <p>Quick and affordable two-wheeler rides to skip the traffic.</p>
+        <button class="btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>BiswaRide Delivery</h3>
+        <p>Send and receive packages across the city securely.</p>
+        <button class="btn">Send Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="working container">
+    <h2>How It Works</h2>
+    <div class="step-box">
+      <div class="step">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>1. Book</h3>
+        <p>Choose your pickup & destination — we’ll find the nearest driver.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>2. Track</h3>
+        <p>Track your ride in real time and stay updated.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>3. Pay & Go</h3>
+        <p>Pay easily via cash or online and enjoy your trip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Section -->
+  <section class="safety container">
+    <h2>Your Safety, Our Priority</h2>
+    <p class="verified">All BiswaRide drivers are verified, vehicles are regularly inspected, and rides are tracked for your safety.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/share/16nAhTpWWK/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/kk__ajay7405/profilecard/?igsh=NG1qbTA1bmhwZ29h" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://wa.me/+91 7843021465" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ajaykahar223344@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://github.com/ajay-2445" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+      <a href="https://www.linkedin.com/in/ajay-kahar-539591288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <h3 class="love">Made with <i class="fa-solid fa-heart"></i> by BiswaRide Team</h3>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

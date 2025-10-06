@@ -1,14 +1,14 @@
 
-/* --- start --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 body {
-  background: linear-gradient(to bottom, #00bfff, #a3f6c5);
+  background: linear-gradient(135deg,#0056b3,#071551);
   min-height: 100vh;
   margin: 0;
   overflow-x: hidden;

@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(135deg,#0056b3,#071551);
+}
+
+.logo{
+    margin-right: auto;
+}
+.logo1{
+    height: 80px;
+    width: 100px;
+    margin-left: auto;
+}
+.navbar {
+  height: 80px;
+  background-color: #071551;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ✅ puts toggle on right */
+}
+
+.section {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;  
+  flex: 1;
+}
+
+.section li {
+  list-style: none;
+}
+
+.section li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 80px;           
+}
+
+.section li a:hover {
+  transition: color ease-in-out 0.3s;
+  color: rgb(255, 0, 0);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.earn-hero {
+  background: url('driver-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.earn-hero .overlay {
+  background: rgba(90, 118, 219, 0.6);
+  padding: 80px 20px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.earn-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.earn-hero span {
+  color: #ff0000;
+}
+
+/* Why Drive Section */
+.drive {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.drive-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.drive-card {
+  background-color: #a2bff7;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  transition: 0.3s;
+  flex-basis: 22%;
+}
+h2{
+    color: #ffffff;
+    font-size: 3rem;
+}
+.drive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.drive-card i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Earnings Section */
+.earning-section {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.earning-section h2 {
+  font-size: 2rem;
+}
+
+.earning-section p {
+  margin: 20px 0;
+}
+.earning-content{
+   
+    align-content: center;
+    text-align: center;
+    background-color: #0056b3;
+    flex-wrap: wrap;
+    display: inline-block;
+    height: 200px;
+    border-radius: 15px;
+}
+/* Steps Section */
+.driver {
+  text-align: center;
+  padding: 60px 20px;
+  
+}
+
+.driver .steps {
+   display: flex;
+  gap: 30px;
+  margin-top: 30px;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.step {
+  background-color: #a2bff7;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  transition: 0.3s;
+  flex-basis: 30%;
+}
+
+.step i {
+  font-size: 35px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Join Section */
+.join-driver {
+  text-align: center;
+  
+  padding: 80px 20px;
+}
+
+.btn {
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff042e;
+}
+.join{
+    color: white;
+}
+
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+}
+
+.footer-icons a {
+  position: relative;
+  font-size: 1.3rem;
+  color: #4cff05;
+}
+.love{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom:0px; 
+    margin-top: 10px;
+}
+
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .section {
+    display: none;  
+    flex-direction: column;
+    width: 100%;
+    background-color: #071551;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  .section.active {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+
+  .section li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section li a {
+    line-height: 40px;
+    width: 100%;
+    display: block;
+  }
+  .logo{
+    margin-right: auto;
+  }
+}
+
+/* ============================= */
+/* 📱 ADDITIONAL RESPONSIVE CSS  */
+/* ============================= */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .earn-hero {
+    padding: 100px 20px;
+  }
+
+  .earn-hero h1 {
+    font-size: 2rem;
+  }
+
+  .drive-card,
+  .step {
+    flex-basis: 45%;
+  }
+
+  .earning-content {
+    width: 80%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .earning-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .earning-section p {
+    font-size: 1rem;
+  }
+
+  .join-driver {
+    padding: 60px 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+}
+
+/* Mobile Phones (max-width: 600px) */
+@media (max-width: 600px) {
+
+  /* Hero Section */
+  .earn-hero {
+    padding: 80px 15px;
+  }
+
+  .earn-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .earn-hero .overlay {
+    padding: 50px 15px;
+  }
+
+  /* Drive Cards */
+  .drive-grid {
+    flex-direction: column;
+  }
+
+  .drive-card {
+    flex-basis: 100%;
+    width: 90%;
+  }
+
+  /* Steps Section */
+  .driver .steps {
+    flex-direction: column;
+  }
+
+  .step {
+    flex-basis: 100%;
+    width: 90%;
+  }
+
+  /* Earnings Section */
+  .earning-content {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .earning-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .earning-section p {
+    font-size: 0.95rem;
+  }
+
+  /* Join Section */
+  .join-driver {
+    padding: 50px 15px;
+  }
+
+  .join-driver h2 {
+    font-size: 1.6rem;
+  }
+
+  .join-driver p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+
+  /* Footer */
+  .footer-icons {
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .footer-icons a {
+    font-size: 1.2rem;
+  }
+
+  .love {
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+}
+
+/* Extra Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .earn-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .drive-card i,
+  .step i {
+    font-size: 30px;
+  }
+
+  .earning-section p {
+    font-size: 0.85rem;
+  }
+
+  .footer-icons {
+    gap: 18px;
+  }
+}
