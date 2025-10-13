@@ -8,7 +8,9 @@
 body, html {
   min-height: 100vh;
   overflow-x: hidden;
-  background: url("back.png") center/cover no-repeat;
+  background: linear-gradient(rgba(3, 3, 3, 0.549), rgba(3, 3, 3, 0.549)),
+              url("back.png") center/cover no-repeat;
+  color: white;
 }
 
 .logo{
@@ -61,8 +63,7 @@ body, html {
 }
 
 .background {
-  height: 100vh;
-  width: 100%;
+  height: 40vh;
   position: relative;
   display: flex;
   align-items: center;   
@@ -71,16 +72,25 @@ body, html {
 }
 
 /* optional overlay (dark tint for readability) */
-/* .background::before {
+/* body::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5); 
-  z-index: 0;
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 3, 3, 0.549); 
+    z-index: 0;
 } */
+
+.image {
+  background-image: url("img.png");
+  height: 550px;
+  width: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto; 
+  display: block;
+  margin-bottom: 60px;
+  border-radius: 18px;
+}
 
 .overlay {
   position: relative;
@@ -104,7 +114,62 @@ body, html {
   color: white;
 }
 
+.container1{
+  color: white;
+  text-align: center;
+}
 
+.prices{
+  display:list-item;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 40px;
+}
+
+.holder input {
+  color: black;
+  width: 250px;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: #dbd4d4;
+  margin-top: 20px;
+  font-size: large;
+  
+}
+
+
+
+.holder ::placeholder{
+  color: black;
+  font-size: large;
+}
+
+.prices button{
+  background-color: rgb(42, 0, 254);
+  color: white;
+  height: 40px;
+  width: 170px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 1rem;
+  margin: 20px;
+}
+
+#butn{
+  background-color: #ffb300;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+}
 
 
 
