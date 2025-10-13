@@ -45,7 +45,7 @@
     <div class="contact-info">
       <h3>Get in Touch</h3>
       <p><i class="fa-solid fa-location-dot"></i> Kolhapur, India</p>
-      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-phone"></i> +91 7843021465</p>
       <p><i class="fa-solid fa-envelope"></i> support@biswaride.com</p>
 
       <div class="social-icons">
@@ -56,15 +56,25 @@
       </div>
     </div>
 
-    <form class="contact-form">
-        <!-- <form action="https://formspree.io/f/xrblwwry" method="POST" class="contact-form"></form> -->
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    <!-- contact-form -->
+ <div class="contact-form">
+        <form action="https://formspree.io/f/xrblwwry" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
 </section>
 
+  <!-- JavaScript for Navbar -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>

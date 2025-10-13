@@ -87,96 +87,105 @@ body, html {
     z-index: 0;
 } */
 
-.image {
-  background-image: url("img.png");
-  height: 550px;
-  width: 550px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto; 
-  display: block;
-  margin-bottom: 60px;
-  border-radius: 18px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+
+.overlay h1 {
+  margin-top: 150px;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
-.overlay {
-  position: relative;
-  z-index: 1;
-  color: white;
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
 .btn {
-  
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
   background: #ff0000;
-  font-size: 16px;
-  font-weight: bold;
+  border: none;
   border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
-.btn a{
+
+.btn a {
+  color: white;
   text-decoration: none;
-  color: white;
 }
 
-.container1{
-  color: white;
+.btn:hover {
+  background: #ffb300;
+}
+
+/* ==== REQUEST SECTION ==== */
+.container1 {
   text-align: center;
+  padding: 60px 20px;
 }
 
-.prices{
-  display:list-item;
-  margin-bottom: 80px;
-  margin-top: 20px;
+.image {
+  background-image: url("img.png");
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
 
 .holder {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .holder input {
-  color: black;
-  width: 250px;
-  height: 30px;
+  width: 260px;
+  height: 40px;
   border-radius: 7px;
   border: none;
   background-color: #dbd4d4;
-  margin-top: 20px;
-  font-size: large;
-  
-}
-
-
-
-.holder ::placeholder{
-  color: black;
-  font-size: large;
-}
-
-.prices button{
-  background-color: rgb(42, 0, 254);
-  color: white;
-  height: 40px;
-  width: 170px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 30px;
-  margin-bottom: 50px;
   font-size: 1rem;
-  margin: 20px;
+  text-align: center;
+  color: black;
 }
 
-#butn{
-  background-color: #ffb300;
-  width: 100px;
-  border-radius: 8px;
+.holder ::placeholder {
+  color: black;
+}
+
+.prices {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.prices button {
+  background-color: #071551;
+  color: white;
   border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prices button:hover {
+  background-color: #ffb300;
+  color: #071551;
+}
+
+#butn {
+  background-color: #ffb300;
+  color: #071551;
 }
 
 
@@ -243,5 +252,57 @@ body, html {
   }
   .logo{
     margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    display: none;
+    flex-direction: column;
+    background-color: #071551;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1500;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .section.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .section li a {
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .background {
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+  .overlay p {
+    font-size: 0.9rem;
+  }
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+  .prices button {
+    width: 80%;
   }
 }
