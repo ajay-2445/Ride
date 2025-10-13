@@ -22,12 +22,18 @@ body {
     margin-left: auto;
 }
 .navbar {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
   background-color: #071551;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ✅ puts toggle on right */
+  justify-content: space-between; 
+  z-index: 1000;         
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section {
@@ -175,7 +181,7 @@ h2{
 .footer-icons a {
   position: relative;
   font-size: 1.3rem;
-  color: #9eabee;
+  color: #4cff05;
 }
 .love{
     color: #ff0000;

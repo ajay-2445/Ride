@@ -21,12 +21,18 @@ body {
     margin-left: auto;
 }
 .navbar {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
   background-color: #071551;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ✅ puts toggle on right */
+  justify-content: space-between; 
+  z-index: 1000;         
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section {
@@ -61,7 +67,7 @@ body {
   cursor: pointer;
 }
 
-/* Hero Section */
+
 .earn-hero {
   background: url('driver-bg.jpg') center/cover no-repeat;
   color: white;
@@ -86,7 +92,7 @@ body {
   color: #ff0000;
 }
 
-/* Why Drive Section */
+
 .drive {
   text-align: center;
   padding: 60px 20px;
@@ -124,7 +130,7 @@ h2{
   margin-bottom: 15px;
 }
 
-/* Earnings Section */
+
 .earning-section {
   color: white;
   text-align: center;
@@ -148,7 +154,7 @@ h2{
     height: 200px;
     border-radius: 15px;
 }
-/* Steps Section */
+
 .driver {
   text-align: center;
   padding: 60px 20px;
@@ -179,7 +185,7 @@ h2{
   margin-bottom: 10px;
 }
 
-/* Join Section */
+
 .join-driver {
   text-align: center;
   
@@ -266,9 +272,6 @@ h2{
   }
 }
 
-/* ============================= */
-/* 📱 ADDITIONAL RESPONSIVE CSS  */
-/* ============================= */
 
 /* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
