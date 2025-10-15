@@ -6,10 +6,12 @@
   color: white;
 }
 
-body {
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background: linear-gradient(135deg, #0056b3, #071551);
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .navbar {
@@ -226,6 +228,9 @@ h2 i {
 
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .section {
     display: none;
     flex-direction: column;
