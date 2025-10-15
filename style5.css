@@ -8,7 +8,7 @@
   
 }
 
-body,html {
+body {
   background: linear-gradient(135deg,#0056b3,#071551);
   min-height: 100vh;
   margin: 0;
