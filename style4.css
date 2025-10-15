@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 body {
@@ -167,7 +168,7 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     text-align: center;

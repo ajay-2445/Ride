@@ -5,9 +5,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
+  
 }
 
-body {
+body,html {
   background: linear-gradient(135deg,#0056b3,#071551);
   min-height: 100vh;
   margin: 0;
@@ -196,6 +197,7 @@ body {
   }
 
   .contact-info p {
+    text-align: center;
     justify-content: center;
   }
 }
@@ -259,5 +261,49 @@ body {
   }
   .logo{
     margin-right: auto;
+  }
+}
+
+
+
+
+
+/* Prevent unwanted horizontal scroll */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make sure all elements respect container width */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix navbar causing side scroll */
+.navbar {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Adjust section padding on mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
